@@ -1,14 +1,18 @@
 pipeline{
-    agent any
+    agent any 
     environment{
         name = "hareesh"
-        brand = "hyundai"
+        wife = "srav"
     }
     stages{
-        stage(build){
+        stage('environment stage'){
+            environment{
+                lover = "vyshu"
+            }
             steps{
                 echo "I am ${name}"
-                echo "My car brand is ${brand}"
+                echo "I am married to ${wife}"
+                echo "I love ${lover}"
             }
         }
     }
