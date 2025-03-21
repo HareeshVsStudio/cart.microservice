@@ -6,7 +6,9 @@ pipeline{
     }
     stages{
         stage(env stage){
+            steps{
             echo "current branch is ${env.BRANCH_NAME}"
+        }
         }
         stage('environment stage'){
             environment{
