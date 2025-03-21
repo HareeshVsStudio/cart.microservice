@@ -5,7 +5,7 @@ pipeline{
         wife = "srav"
     }
     stages{
-        stage(env stage){
+        stage('env stage'){
             steps{
             echo "current branch is ${env.BRANCH_NAME}"
         }
