@@ -5,6 +5,9 @@ pipeline{
         wife = "srav"
     }
     stages{
+        stage(env stage){
+            echo "current branch is ${env.BRANCH_NAME}"
+        }
         stage('environment stage'){
             environment{
                 lover = "vyshu"
